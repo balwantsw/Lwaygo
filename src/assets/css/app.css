@@ -1,0 +1,253 @@
+/****** WE APP STYLE ***/
+
+* {
+	outline: none;
+}
+
+body, html {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Typography*/
+.h1, h1 {
+    font-size: 50px;
+}
+.h3, h3 {
+    font-size: 22px;
+}
+
+/*Material icons*/
+.md-18 {
+	font-size: 18px;
+}
+.md-24 {
+	font-size: 18px;
+}
+.md-36 {
+	font-size: 18px;
+}
+
+/*Nav Bar*/
+.lw_nav {
+	background: #fff;
+	border:none;
+	min-height: 50px; 
+	height: 50px;
+	padding: 0 45px;
+	margin: 0;
+  	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.043);
+}
+.lw_nav .navbar-brand {
+	padding: 0;
+    padding: 0;
+    height: 50px;
+    padding-right:20px;
+    border-right: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lw_nav .navbar-brand img {
+	max-width: 100%;
+	width: auto;
+}
+
+/*Category Menu*/
+.lw_categoryDropdown {
+	float: left;
+	height: 50px;
+}
+a.categoryDropdown_menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 170px;
+    border-right: 1px solid #eee;
+    padding: 0 15px;
+    color: #010101;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+a.categoryDropdown_menu span {
+	margin: 0 20px 0 5px;
+}
+
+/*Global Search*/
+.lw_appGlobal_Search {
+    background: #f2f3f5;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid #eee;
+    position: relative;
+}
+.appGlobal_Search_input {
+    line-height: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: none !important;
+    outline: none;
+    border-radius: 0;
+    padding: 0 20px;
+    width: 280px !important;
+    background: transparent;
+}
+.appGlobal_SearchButton {
+	border: none;
+	position: absolute;
+	right:  0;
+	top: 0;
+	height: 100%;
+	align-items:  center;
+	display:  flex;
+	padding:  0 20px;
+	background: transparent;
+	color: #f46137;
+}
+
+/*App Nav Right Menu*/
+.lw_nav .navbar-right>li>a {
+    color: #777;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.appNav_login_signup {
+    float: right;
+    line-height: 50px;
+}
+.appNav_login_signup li {
+    float: left;
+    margin-left: 5px;
+}
+
+
+/*Home Banner*/
+.lw_homeBanner {
+	position: relative;
+}
+.lw_homeBanner_bg {
+    height: 520px;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lw_homeBanner_bg img {
+	min-width: 100%;
+}
+.lw_homeBanner_overlay {
+	position: absolute;
+	top: 0;
+	left:  0;
+	right: 0;
+}
+.lw_homeBanner_overlay .bannerContent {
+	color: #fff;
+	text-align: center;
+	margin-top: 70px;
+}
+.lw_homeBanner_overlay .bannerContent h1 {
+	margin-bottom: 30px;
+}
+.bannerContent_actions {
+	display:  flex;
+	justify-content: center;
+	margin-top: 65px;
+	align-items: center;
+}
+.bannerAction {
+	float: left;
+	width:  300px;
+	background: #fff;
+	padding: 17px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000 !important;
+	text-decoration: none !important;
+}
+.bannerAction span {
+	display: block;
+	color: #616161;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 7px;
+}
+.bannerAction_divider {
+	height: 70px;
+	width: 1px;
+	background: #fff;
+	margin:0 35px;
+	display: grid;
+	align-items:  center;
+	justify-content: center;
+}
+.bannerAction_divider:before {
+	content: "OR";
+	width: 30px;
+	height: 30px;
+	background:  #fff;
+	color: #010101;
+	border-radius: 50%;
+	display: flex;
+	justify-content:  center;
+	align-items:  center;
+	font-size: 13px;
+}
+.bannerAction.dark {
+    background: #f46137;
+    color: #fff !important;
+}
+.bannerAction.dark span {
+    color: #fff;
+}
+ul.servicesButton_list {
+    list-style: none;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.071);
+    margin-bottom: 500px;
+    margin-top: -30px;
+    border-radius: 5px;
+    position: relative;
+}
+.servicesButton_item {
+	border-right:1px solid #e5e5e5; 
+	flex: 1;
+}
+.servicesButton_item:last-child {
+	border-right:none;
+}
+.servicesButton_item a {
+    display: block;
+    height: 140px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none !important;
+    color: #000 !important;
+    font-size: 13px;
+    font-weight: 500;
+    transform: scale(1);
+    transition: all .10s linear;
+}
+.servicesButton_item:hover a {
+	background-color: #fff;
+    border-color: rgba(3,27,78,.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(3,27,78,.06);
+    position: relative;
+    transform: scale(1.05);
+    z-index: 11;
+}
+.servicesButton_item a .serviceIcon {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicesButton_item a .serviceName {
+	display: block;
+	margin-top: 5px;
+}
