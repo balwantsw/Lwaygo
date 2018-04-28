@@ -1,0 +1,155 @@
+  <!-- Homepage Banner -->
+  <section class="lw_homeBanner">
+    <div class="lw_homeBanner_bg">
+      <img src="../../../assets/img/banner-bg.jpg">
+    </div>
+    <div class="lw_homeBanner_overlay">
+      <div class="container">
+        <div class="bannerContent">
+          <h1>Here is everything for your work life.</h1>
+          <h3>Get help to create an awesome workplace culture!</h3>
+
+          <div class="bannerContent_actions">
+            <a href="" routerLink="/contact-us" class="bannerAction">
+              Need some help?
+              <span>Find a perfect service for you.</span>
+            </a>
+            <span class="bannerAction_divider"></span>
+            <a href="" routerLink="/contact-us" class="bannerAction dark">
+              Need some help?
+              <span>Find a perfect service for you.</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </section>
+  <!-- Services Buttons -->
+  <section class="home_servicesButtons">
+    <div class="container">
+      <ul class="servicesButton_list">
+
+        <!-- item -->
+        <li class="servicesButton_item">
+          <a href="">
+            <span class="serviceIcon"><img src="../../../assets/img/service-icons/business-services.png"></span>
+            <span class="serviceName">Business Services</span>
+          </a>
+        </li>
+
+        <!-- item -->
+        <li class="servicesButton_item">
+          <a routerLink="/office-products">
+            <span class="serviceIcon"><img src="../../../assets/img/service-icons/office-supplies.png"></span>
+            <span class="serviceName">Office Supplies & Products</span>
+          </a>
+        </li>
+
+        <!-- item -->
+        <li class="servicesButton_item">
+          <a href="">
+            <span class="serviceIcon"><img src="../../../assets/img/service-icons/engamenrdd.png"></span>
+            <span class="serviceName">Employee Engagement</span>
+          </a>
+        </li>
+
+        <!-- item -->
+        <li class="servicesButton_item">
+          <a href="">
+            <span class="serviceIcon"><img src="../../../assets/img/service-icons/learning_developemt.png"></span>
+            <span class="serviceName">Learning & Development</span>
+          </a>
+        </li>
+
+        <!-- item -->
+        <li class="servicesButton_item">
+          <a href="">
+            <span class="serviceIcon"><img src="../../../assets/img/service-icons/engagement.png"></span>
+            <span class="serviceName">Party & Event Management</span>
+          </a>
+        </li>
+
+        <!-- item -->
+        <li class="servicesButton_item">
+          <a href="">
+            <span class="serviceIcon"><img src="../../../assets/img/service-icons/destintaion.png"></span>
+            <span class="serviceName">Destination Management</span>
+          </a>
+        </li>
+
+        <!-- item -->
+        <li class="servicesButton_item">
+          <a href="">
+            <span class="serviceIcon"><img src="../../../assets/img/service-icons/story_icon.png"></span>
+            <span class="serviceName">Stories</span>
+          </a>
+        </li>
+
+        <!-- item -->
+        <li class="servicesButton_item">
+          <a href="">
+            <span class="serviceIcon"><img src="../../../assets/img/service-icons/client.png"></span>
+            <span class="serviceName">Clients</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+
+  <section class="ProductlistHome">
+    <div class="container">
+      <div class="IndoorPlants">
+          <!-- main category -->
+    <div *ngFor='let product of products'>
+        <span>{{product.name}}</span>
+    
+        <!-- child items -->
+        <ul>
+          <!-- <li *ngFor='let item of product.items'>
+              <a><img src="assets/img/Lemon Balm.jpeg">
+              
+              </a>
+          </li> -->
+          <li>
+              <a><img src="assets/img/Lemon Balm.jpeg">
+              
+              </a>
+          </li>
+          <li>
+              <a><img src="assets/img/Spiderplant.jpeg">
+              
+              </a>
+          </li>
+          <li>
+              <a><img src="assets/img/Sit & Stand Desks.jpeg">
+              
+              </a>
+          </li>
+          <li>
+              <a><img src="assets/img/Bookcase &or Filing Cabinet.jpeg">
+              
+              </a>
+          </li>
+          <li>
+              <a><img src="assets/img/Desks & Chairs.jpeg">
+              
+              </a>
+          </li>
+          <li>
+              <a><img src="assets/img/Philodendron.jpeg">
+              
+              </a>
+          </li>
+        </ul>
+    
+        </div>
+      </div>
+      </div>
+    </section>
+  
+  
+  
+  

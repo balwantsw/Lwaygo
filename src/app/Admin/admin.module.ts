@@ -14,29 +14,35 @@ import {MatSelectModule,
   MatCardModule,
   MatToolbarModule,
   MatCheckboxModule,
-  MatTableModule
+  MatTableModule,
+  MatTabsModule
 } from '@angular/material';
+import { ManageProductsComponent } from './manage-products/manage-products.component';
+import {ManageProductService} from './manage-products/manage-product.service'
+import {ManageCategoryService} from './manage-category/manage-category.service'
 
 @NgModule({
   declarations: [
     AdminComponent,
-    ManageCategoryComponent
+    ManageCategoryComponent,
+    ManageProductsComponent
     ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    AdminRoutingModule,
     MatSelectModule,
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
     MatToolbarModule,
     MatCheckboxModule,
-    AdminRoutingModule,
     MatTableModule,
-    FormsModule,
-    HttpClientModule
+    MatTabsModule
   ],
-  providers: [AdminService,HttpClient],
+  providers: [HttpClient,AdminService,ManageProductService,ManageCategoryService],
   bootstrap: [AdminComponent]
 })
 export class AdminModule { }

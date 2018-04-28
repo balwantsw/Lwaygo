@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import{ category} from '../Models/category';
-import{AdminService} from '../admin.service';
+import{ManageCategoryService} from '../manage-category/manage-category.service';
 import {MatTableDataSource} from '@angular/material';
 import { Observable } from 'rxjs/Observable';
-
+import{Product} from '../Models/product';
 
 @Component({
   selector: 'manage-category',
@@ -11,16 +11,15 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./manage-category.component.css']
 })
 export class ManageCategoryComponent  implements OnInit {
-  fileToUpload: File = null;
   categorieslist:any;
   categories=new category();
 
-  constructor(private adminService:AdminService) { }
+  constructor(private manageCategoryService:ManageCategoryService) { }
 
   ngOnInit() {
     // let data=[];
     debugger;
-    this.categorieslist=this.adminService.getCategories();
+    this.categorieslist=this.manageCategoryService.getCategories();
     // this.dataSource = new MatTableDataSource(data);
   }
 
@@ -28,14 +27,11 @@ export class ManageCategoryComponent  implements OnInit {
 
   SaveCategory(event){
     debugger;
-    this.adminService.addCategory(event);
+    this.manageCategoryService.addCategory(event);
     console.log(event);
   }
-  handleFileInput(files: FileList) {
-    debugger;
-    this.fileToUpload = files.item(0);
-    this.adminService.uploadFileToActivity(this.fileToUpload);
-}
+
+
 
   // onFileChanged(event) {
   //   debugger;
