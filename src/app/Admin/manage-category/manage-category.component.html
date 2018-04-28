@@ -1,0 +1,36 @@
+<mat-card>Lwaygo Category Page</mat-card>
+<mat-card><mat-card>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Name" [(ngModel)]="categories.name" name="name" >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Display Sequence" [(ngModel)]="categories.displaysequence" name="displaysequence">
+          </mat-form-field>
+          <mat-checkbox [(ngModel)]="categories.active" name="active">Active</mat-checkbox>
+  
+      </form>
+    
+</mat-card>
+</mat-card>
+<mat-card>Products Page</mat-card>
+<mat-card>
+  <mat-card>
+    <form class="example-form">
+      <mat-form-field>
+        <mat-select placeholder="Select Category">
+          <mat-option *ngFor="let category of categorieslist" [value]="category.id">
+            {{ category.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="form-group">
+        <label for="file">Choose File</label>
+        <input type="file"
+               id="file"
+               (change)="handleFileInput($event.target.files)">
+    </div>
+    </form>
+  </mat-card>
+</mat-card>
+
