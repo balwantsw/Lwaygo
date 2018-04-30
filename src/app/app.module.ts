@@ -1,23 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
-import { OfficeProductsComponent } from './office-products/office-products.component';
 import { AppRoutingModule } from './/app-routing.module';
-import{OfficeProductsService} from './office-products/office-products.service'
+import { ContactUsComponent } from './Personal/contact-us/contact-us.component';
+import { HomeComponent } from './Personal/home/home.component';
+import{HomeService } from './Personal/home/home.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    OfficeProductsComponent
-  ],
+    ContactUsComponent,
+    HomeComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [OfficeProductsService],
+  providers: [HomeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

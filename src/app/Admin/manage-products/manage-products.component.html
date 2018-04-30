@@ -1,0 +1,36 @@
+<mat-card>Manage Products</mat-card>
+<mat-card>
+  <mat-card>
+    <form class="example-form">
+      <!-- <mat-form-field>
+        <mat-select placeholder="Select Category">
+          <mat-option *ngFor="let category of categorieslist" [value]="category.id">
+            {{ category.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Name" [(ngModel)]="product.name" name="name" >
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Price" [(ngModel)]="product.price" name="price" >
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Display Sequence" [(ngModel)]="product.displaysequence" name="displaysequence">
+      </mat-form-field>
+      <mat-checkbox [(ngModel)]="product.active" name="active">Active</mat-checkbox>
+      
+      <div class="form-group">
+        <label for="file">Choose File</label>
+        <input type="file"
+               id="file" name="file"
+               (change)="handleFileInput($event.target.files)">
+    </div>
+    <input type="button" (click)="saveProduct(product)" value="Save Product"/>
+
+    </form>
+  </mat-card>
+</mat-card>
