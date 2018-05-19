@@ -1,0 +1,590 @@
+/****** WE APP STYLE ***/
+
+* {
+	outline: none;
+}
+
+body, html {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Typography*/
+.h1, h1 {
+    font-size: 50px;
+}
+.h3, h3 {
+    font-size: 22px;
+}
+ul { margin: 0; padding: 0;}
+li { list-style: none;}
+/*Material icons*/
+.md-18 {
+	font-size: 18px;
+}
+.md-24 {
+	font-size: 18px;
+}
+.md-36 {
+	font-size: 18px;
+}
+
+/*Nav Bar*/
+.lw_nav {
+	background: #fff;
+	border:none;
+	min-height: 50px; 
+	height: 50px;
+	padding: 0 45px;
+	margin: 0;
+  	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.043);
+}
+.lw_nav .navbar-brand {
+	padding: 0;
+    padding: 0;
+    height: 50px;
+    padding-right:20px;
+    border-right: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lw_nav .navbar-brand img {
+	max-width: 100%;
+	width: auto;
+}
+
+/*Category Menu*/
+.lw_categoryDropdown {
+	float: left;
+	height: 50px;
+}
+a.categoryDropdown_menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 170px;
+    border-right: 1px solid #eee;
+    padding: 0 15px;
+    color: #010101;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+a.categoryDropdown_menu span {
+	margin: 0 20px 0 5px;
+}
+
+/*Global Search*/
+.lw_appGlobal_Search {
+    background: #f2f3f5;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid #eee;
+    position: relative;
+}
+.appGlobal_Search_input {
+    line-height: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: none !important;
+    outline: none;
+    border-radius: 0;
+    padding: 0 20px;
+    width: 280px !important;
+    background: transparent;
+}
+.appGlobal_SearchButton {
+	border: none;
+	position: absolute;
+	right:  0;
+	top: 0;
+	height: 100%;
+	align-items:  center;
+	display:  flex;
+	padding:  0 20px;
+	background: transparent;
+	color: #f46137;
+}
+
+/*App Nav Right Menu*/
+.lw_nav .navbar-right>li>a {
+    color: #777;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.appNav_login_signup {
+    float: right;
+    line-height: 50px;
+}
+.appNav_login_signup li {
+    float: left;
+    margin-left: 5px;
+}
+
+
+/*Home Banner*/
+.lw_homeBanner {
+	position: relative;
+}
+.lw_homeBanner_bg {
+    height: 520px;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lw_homeBanner_bg img {
+	min-width: 100%;
+}
+.lw_homeBanner_overlay {
+	position: absolute;
+	top: 0;
+	left:  0;
+	right: 0;
+}
+.lw_homeBanner_overlay .bannerContent {
+	color: #fff;
+	text-align: center;
+	margin-top: 70px;
+}
+.lw_homeBanner_overlay .bannerContent h1 {
+	margin-bottom: 30px;
+}
+.bannerContent_actions {
+	display:  flex;
+	justify-content: center;
+	margin-top: 65px;
+	align-items: center;
+}
+.bannerAction {
+	float: left;
+	width:  300px;
+	background: #fff;
+	padding: 17px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000 !important;
+	text-decoration: none !important;
+}
+.bannerAction span {
+	display: block;
+	color: #616161;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 7px;
+}
+.bannerAction_divider {
+	height: 70px;
+	width: 1px;
+	background: #fff;
+	margin:0 35px;
+	display: grid;
+	align-items:  center;
+	justify-content: center;
+}
+.bannerAction_divider:before {
+	content: "OR";
+	width: 30px;
+	height: 30px;
+	background:  #fff;
+	color: #010101;
+	border-radius: 50%;
+	display: flex;
+	justify-content:  center;
+	align-items:  center;
+	font-size: 13px;
+}
+.bannerAction.dark {
+    background: #f46137;
+    color: #fff !important;
+}
+.bannerAction.dark span {
+    color: #fff;
+}
+ul.servicesButton_list {
+    list-style: none;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.071);
+    margin-top: -30px;
+    border-radius: 5px;
+    position: relative;
+}
+.servicesButton_item {
+	border-right:1px solid #e5e5e5; 
+	flex: 1;
+}
+.servicesButton_item:last-child {
+	border-right:none;
+}
+.servicesButton_item a {
+    display: block;
+    height: 140px; text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none !important;
+    color: #000 !important;
+    font-size: 13px;
+    font-weight: 500;
+    transform: scale(1);
+    transition: all .10s linear;
+}
+.servicesButton_item:hover a {
+	background-color: #fff;
+    border-color: rgba(3,27,78,.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(3,27,78,.06);
+    position: relative;
+    transform: scale(1.05);
+    z-index: 11;
+}
+.servicesButton_item a .serviceIcon {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicesButton_item a .serviceName {
+	display: block;
+	margin-top: 5px;
+}
+.IndoorPlants ul li {
+    list-style: none;
+    width: 278px;
+    height:  auto;
+
+    margin-left: 10px;
+}
+.IndoorPlants > div > span > a {
+    font-size: 12px;
+    text-align: right;
+    margin-left: auto;
+    padding-top: 3px;
+    font-weight: 400;
+    float: right;
+    cursor: pointer;
+}
+.IndoorPlants ul li a { text-decoration: none;}
+
+.IndoorPlants ul {
+    margin:  0;
+    padding: 0;
+    display: flex;
+}
+
+.IndoorPlants ul li:first-child {
+    margin-left: 0;
+}
+
+.IndoorPlants > div {
+    margin: 34px 0;
+}
+
+.IndoorPlants > div > span {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #636363;
+    background: #f7f7f7;
+    padding: 5px 15px;
+    border-left: 3px solid #f46137;
+}
+.IndoorPlants img { max-width: 100%; width: 100%;}
+
+
+/*footer*/
+
+footer {
+    background: #3b4048;min-height: 250px; padding: 15px 0 0; margin-top: 20px;
+}
+
+footer.main_footer h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+footer.main_footer ul li a {
+    color: #949ca9;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer.main_footer ul li:hover a { color: #c1c8d4;}
+footer.main_footer p { color: #949ca9; line-height: 24px;}
+
+footer.main_footer .socialMedia ul li { float: left; margin-right: 15px; }
+footer.main_footer .socialMedia ul li a {font-size: 15px;}
+.bottomFooter {
+    background: #2c3138;
+    padding: 10px;
+    text-align: center;    margin-top: 33px;
+}
+.bottomFooter p { margin: 0;}
+
+/****** Contact Us***/
+.topSectionProduct {
+    background: #f5f5f5;
+    padding: 6px 11px;
+    display: flex;
+    align-items: center;
+}
+
+.topSectionProduct button {
+    margin-left: auto;
+    background: #f46137;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+.ContactInner {
+    background:  #f5f5f5;
+    max-width: 980px;
+    margin: 0 auto;
+    width: 100%; display: flex;
+}
+
+.ContactInner label {
+    float: left;
+    margin-right: 10px;
+    width: 120px;
+    text-align: right;
+    font-weight: 400;
+    margin-top: 9px;
+}
+
+.ContactInner input {
+    width: 71%;border-radius: 3px;
+    height: 37px;
+    border: 1px solid #e4e4e4;
+    padding: 0 10px;
+}
+.contactUs h2 {margin: 0 auto 20px;font-size: 25px;width: 980px;}
+
+.contactLeft span {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    display: block;
+}
+.infoContact i.material-icons {
+    float: left;
+    margin-right: 13px;
+    color: #ffffff;
+    font-size: 21px;
+    height: 29px;
+}
+.contactLeft button {
+    margin-left: 132px;
+    color: #ffffff;
+    background: #f46137;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 20px;
+    font-size: 16px;
+}
+.contactRight .social-links { margin-top: 40px;}
+.contactRight .social-links a {
+    color: #ffffff;
+    font-size: 19px;
+    margin-right: 9px;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 6px;
+}
+.mainContactInfo {
+    padding: 20px 38px;
+    color: #ffffff;
+}
+
+.infoContact {
+    margin-bottom: 23px;
+}
+.contactRight h3 {
+    color: #fff;
+    padding: 0px 38px;
+    font-weight: 500;
+    font-size: 19px;
+}
+.ContactRow {
+    margin-bottom: 15px;
+}
+
+.ContactInner textarea {
+    border: 1px solid #e4e4e4;
+    width: 71%;
+    height: 110px; border-radius: 3px;
+    resize: none;
+}
+.contactLeft {
+    width: 70%;
+    padding: 20px;
+}
+
+.contactRight {
+    width: 50%;
+    background: #f46137;
+}
+
+.innerCommon { margin: 50px 0;}
+
+/****** media css***/
+.MainSign {
+    background: url("../img/bg-sign.jpg") no-repeat;width: 100%;max-width: 520px;
+    margin: 0 auto; border-radius: 3px;
+   
+
+}
+
+.CenterMain {
+    background: rgba(244, 97, 55, 0.96);
+    padding: 28px 40px;border-radius: 3px;
+}
+.LoginBTn button {
+    background: transparent;
+    border: none;
+    padding: 10px 33px;
+    border-radius: 3px;
+    color: #fff;
+    border: 2px solid #ffffff;
+    margin-top: 0px;
+}
+
+.LoginBTn a {
+    float: right;
+    
+    color: #fff;
+}
+.CenterMain label {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 400;
+    width: 71px;
+    display: block;
+    margin-bottom: 10px;
+}
+.CenterMain input::-moz-placeholder {
+color: rgb(185, 185, 185); font-size: 13px;
+
+}
+.CenterMain input::-webkit-input-placeholder {
+    color: rgb(185, 185, 185);font-size: 13px;
+    
+    }
+    .CenterMain input::-ms-input-placeholder {
+        color: rgb(185, 185, 185);font-size: 13px;
+        
+        }
+.CenterMain input {
+    width: 100%;
+    height: 45px; padding: 0 10px;
+    border: none;
+    border-radius: 3px;
+}
+.CenterMain h1 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    margin:  0 0 45px;
+    border-bottom: 1px solid #fb8962;
+    padding-bottom: 22px;
+    font-weight: 400;
+}
+
+/****** media css***/
+
+@media only screen and (max-width:1120px) {
+    .appGlobal_Search_input {width: 240px !important;}
+
+    .lw_nav { padding: 0 20px;}
+    .lw_nav .navbar-right > li > a { padding: 0 5px;}
+
+}
+
+
+@media only screen and (max-width:991px) {
+
+    .container { width: 100%;}
+}
+@media only screen and (max-width:979px) {
+
+.lw_appGlobal_Search { display: none;}
+.lw_homeBanner_bg { height: auto;}
+.lw_homeBanner_overlay .bannerContent h1 {font-size: 37px;}
+.servicesButton_item a { font-size: 11px;}
+.servicesButton_item a { padding: 4px;}
+}
+@media only screen and (max-width:767px) {
+
+    ul.servicesButton_list {
+        display: table;margin-top: 18px; box-shadow: none;
+    }
+    .servicesButton_item {
+        border: 1px solid #e5e5e5;
+        width: 25%;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .servicesButton_item:last-child {
+        border-right: 1px solid #e5e5e5;
+    }
+
+    .IndoorPlants ul li {
+        width: 32%;float: left; margin-bottom: 10px; margin-left: 2%;
+    }
+    .IndoorPlants ul {display: table;}
+
+    .IndoorPlants ul li:nth-child(3n+1) { margin-left: 0;}
+    .lw_homeBanner_overlay .bannerContent { margin-top: 21px;}
+
+    .lw_homeBanner_overlay .bannerContent h1 { display: none;}
+    .lw_homeBanner_overlay .bannerContent h3 { display: none;}
+    .lw_homeBanner_bg {
+        height: 212px;
+    }
+
+    .bannerContent_actions {margin-top: 25px;}
+
+}
+
+@media only screen and (max-width:479px) {
+
+    .lw_homeBanner_bg { height: auto; }
+
+    .IndoorPlants ul li {
+        width: 49%;float: left; margin-bottom: 10px; margin-left: 2%;
+    }
+    .IndoorPlants ul li:nth-child(3n+1) { margin-left: 2%;}
+    .IndoorPlants ul li:nth-child(2n+1) { margin-left: 0;}
+    .servicesButton_item {
+        border: 1px solid #e5e5e5;
+        width: 50%;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    .bannerAction { display: none;} 
+    .bannerAction.dark { display: block; margin-left: 0; width: 100%; }
+    .bannerContent_actions {
+        display: table;
+        margin: 0 auto;
+    }
+    .bannerAction_divider { display: none;}
+}
+
+
+
+
